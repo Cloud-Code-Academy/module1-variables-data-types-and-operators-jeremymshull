@@ -31,8 +31,14 @@ public with sharing class VariablesDataTypesOperators {
      * @param b The second number.
      * @return The sum of the two numbers, or null if either number is null.
      */
-    public static Integer addition(Integer a, Integer b) {  
-        return null; // Replace null with the variable you used to store the result
+    public static Integer addition(Integer a, Integer b) {
+        if(a == null || b == null) {
+            return null;
+        } else {
+            Integer sum = a + b;
+            return sum;
+        }
+          // Replace null with the variable you used to store the result
     }
 
     /**
