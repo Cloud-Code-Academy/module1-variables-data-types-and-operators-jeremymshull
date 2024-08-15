@@ -98,11 +98,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isEven(Integer num) {
         Integer remainder = math.mod(num, 2);
-        if (remainder == 0) {
-            return true;
-        } else {
-            return false; // Replace null with the variable you used to store the result
-        }
+        return (remainder == 0);
             
     }
 
@@ -161,8 +157,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        Date todaysDate = Date.today();
-        return todaysDate.daysBetween(dt) < 0; // Replace null with the variable you used to store the result    
+        return dt < Date.today();  
     }
 
     /**
